@@ -15,7 +15,7 @@ import random
 import string
 from pathlib import Path
 
-import logging
+import loggers
 
 from django.utils.log import DEFAULT_LOGGING
 from dotenv import load_dotenv
