@@ -190,7 +190,7 @@ LOGGING = {
         },
     },
     "loggers": {
-        "home": {
+        "apps.home": {
             "handlers": ["apps_home", "console"],
             "level": "DEBUG",
             "propagate": False,
