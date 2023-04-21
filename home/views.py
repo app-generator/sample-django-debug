@@ -1,5 +1,6 @@
 from logging import CRITICAL
 
+from django.http import HttpResponseServerError
 from django.shortcuts import render
 
 from loggers import apps_home_logger
@@ -19,4 +20,8 @@ def test_logs(request):
         a = 1 / 0
         return render(request, "pages/index.html")
     except ZeroDivisionError as e:
-        apps_home_logger.log(CRITICAL, exc_info=e)
+        apps_home_logger.log(CRITICAL, msg=e)
+
+        return HttpResponseServerError(
+            "<h1>Server Error (500)</h1>", content_type="text/html"
+        )
