@@ -14,6 +14,7 @@ import os
 import random
 import string
 from pathlib import Path
+import mimetypes
 
 import loggers
 
@@ -52,10 +53,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "debug_toolbar",
     "home",
 ]
 
 MIDDLEWARE = [
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -197,3 +200,13 @@ LOGGING = {
         },
     },
 }
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+    "localhost",
+]
+
+
+mimetypes.add_type("application/javascript", ".js", True)
+
+DEBUG_TOOLBAR_PATCH_SETTINGS = False

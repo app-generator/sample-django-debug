@@ -20,4 +20,5 @@ urlpatterns = [
     path("", include("home.urls")),
     path("admin/", admin.site.urls),
     path("", include("admin_volt.urls")),
+    path("debug/", include("debug_toolbar.urls")),
 ]
