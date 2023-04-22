@@ -3,6 +3,7 @@ gunicorn
 python-dotenv
 whitenoise
 django-admin-volt==1.0.10
+django-debug-toolbar==4.0.0
 
 # psycopg2-binary
 # mysqlclient
