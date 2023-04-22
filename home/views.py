@@ -1,12 +1,12 @@
 from logging import CRITICAL
 
+from django.contrib.auth.models import User
 from django.http import HttpResponseServerError
 from django.shortcuts import render
 
 from loggers import apps_home_logger
 
-
-# Create your views here.
+import pdb
 
 
 def index(request):
@@ -15,6 +15,9 @@ def index(request):
 
 
 def test_logs(request):
+    users = User.objects.all()
+
+    pdb.set_trace()
 
     try:
         a = 1 / 0
