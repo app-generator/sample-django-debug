@@ -43,6 +43,24 @@ $ pip install -r requirements.txt
 
 <br />
 
+> 👉 Logging
+
+The project integrates logging by default. For this to work, create a file called `apps_home.log` in the `logs` directory. To use the logger, you can do the following 👇
+
+```python
+
+from loggers import apps_home_logger
+
+...
+    try:
+        a = 1 / 0
+        return render(request, "pages/index.html")
+    except ZeroDivisionError as e:
+        apps_home_logger.log(CRITICAL, msg=e)
+
+```
+
+
 > 👉 Set Up Database
 
 ```bash
