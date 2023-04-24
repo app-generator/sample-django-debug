@@ -23,8 +23,6 @@ def test_logs(request):
         a = 1 / 0
         return render(request, "pages/index.html")
     except ZeroDivisionError as e:
-        apps_home_logger.log(CRITICAL, msg=e)
+        apps_home_logger.log(CRITICAL, msg=str(e))
 
-        return HttpResponseServerError(
-            "<h1>Server Error (500)</h1>", content_type="text/html"
-        )
+        return render(request, "pages/examples/500.html")
