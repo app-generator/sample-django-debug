@@ -1,4 +1,4 @@
-# [Volt Dashboard Django](https://appseed.us/product/volt-dashboard/django/)
+# [How to DEBUG Django](https://docs.appseed.us/technologies/django/how-to-debug/)
 
 Open-source **Django Dashboard** built on top of a modern design. **[Volt Dashboard](https://appseed.us/product/volt-dashboard/django/)** is a free and open source `Bootstrap 5` Admin Dashboard featuring over 100 components, 11 example pages and 3 plugins with Vanilla JS. There are more than 100 free Bootstrap 5 components included some of them being buttons, alerts, modals, and datepickers.
 
@@ -211,4 +211,4 @@ This design is a pixel-perfect [Bootstrap 5](https://www.admin-dashboards.com/bo
 <br />
 
 ---
-[Django Volt Dashboard](https://appseed.us/product/volt-dashboard/django/) - **Django** starter provided by **[AppSeed](https://appseed.us/)**
+[How to DEBUG Django](https://docs.appseed.us/technologies/django/how-to-debug/) - **Django** starter provided by **[AppSeed](https://appseed.us/)**
